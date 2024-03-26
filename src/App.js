@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import ArticleEnglish from './components/ArticleEnglish.js';
+import ArticleArabic from './components/ArticleArabic.js'
+import Navbar from './components/Navbar.js'
 
-function App() {
+const App = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState('en');
+
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+      <Navbar onSelectLanguage={handleLanguageChange} />
+      {selectedLanguage === 'en' ? <ArticleEnglish /> : <ArticleArabic />}
     </div>
   );
 }
