@@ -28,20 +28,17 @@ const ArticleEnglish = () => {
                 voluptatum nostrum molestiae magnam ex repellat adipisci
                 expedita.
               </p>
+
+              <p className={styles.lQuote}>
+              Sometimes I wonder if computers really understand what we're asking them to do, 
+              or if they're just really good at pretending.
+              </p>
+
               <p className={styles.paragraph}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Possimus fuga modi quasi sit, laboriosam officiis saepe dolor
                 iste odio esse corrupti illum blanditiis fugit commodi obcaecati
-                voluptatum. Tenetur reprehenderit eligendi omnis voluptate
-                similique quae officiis. Ratione, reprehenderit quidem velit
-                eaque at totam quaerat iure quia consectetur ex nesciunt
-                asperiores labore aliquid. Hic, est! Fugit sint molestias
-                maiores! Minima, excepturi cum assumenda maxime earum laborum
-                modi corrupti impedit iusto soluta labore velit maiores
-                consequatur, voluptatum adipisci, dolorem eum aut ipsam?
-                Reprehenderit minus cupiditate illo eaque modi odit odio
-                consequuntur? Excepturi sunt rem dolor veritatis, quo mollitia?
-                Ab vitae hic iure at.
+                voluptatum. 
               </p>
 
               <div className={styles.wrapper}>
@@ -53,7 +50,6 @@ const ArticleEnglish = () => {
                 </div>
               </div>
           </article>
-
         </div>
       </div>
     </section>

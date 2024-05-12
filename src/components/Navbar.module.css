@@ -5,13 +5,14 @@
     top: 0;
     z-index: 2;
   }
-  
-  .container {
-    display: grid;
-    grid-template-columns: 5fr 4fr;
-    padding: 1 rem;
-    align-items: center;
+
+  .languageSwitcher {
+    margin-inline-start: 10px;
   }
+
+ .dropdown{ 
+  margin-inline-start: 3px;
+ }
   
   
   

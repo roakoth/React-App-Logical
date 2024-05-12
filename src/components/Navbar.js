@@ -10,12 +10,12 @@ const Navbar = ({ onSelectLanguage }) => {
 
 return (
     <nav className={styles.mainNav}>
-    <div className={styles.container}>
+    <div>
     <div className={styles.languageSwitcher}>
-    <label>Select Language:</label>
-    <select id="language-select" onChange={changeLanguage}>
-      <option value="en">English</option>
-      <option value="ar">Arabic</option>
+    <label>Language:</label>
+    <select className={styles.dropdown} id="language-select" onChange={changeLanguage}>
+      <option value="en"> English </option>
+      <option value="ar"> Arabic </option>
     </select>
   </div>
 
